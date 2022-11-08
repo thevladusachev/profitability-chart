@@ -1,0 +1,37 @@
+form {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
+}
+
+.container-result {
+	display: flex;
+	justify-content: center;
+	margin: 10px 0px;
+	font-size: 32px;
+
+
+}
+
+.result {
+	padding: 5px 5px;
+	border: solid 2px rgb(99, 93, 93);
+	border-radius: 3px;
+	display: inline-block;
+	color: rgb(99, 93, 93);
+}
+
+.container-chart {
+	padding: 0px 30px;
+	box-sizing: border-box;
+	display: flex;
+	gap: 2px;
+	align-items: flex-end;
+	height: calc(100vh - 100px);
+	width: 100vw;
+}
+
+.chart__element {
+	width: 100%;
+	background-color: tomato;
+}
