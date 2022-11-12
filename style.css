@@ -1,17 +1,61 @@
-form {
+body {
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: var(--main-color);
+}
+
+
+.container {
 	display: flex;
+}
+
+form {
+	position: relative;
+	display: flex;
+	flex-direction: column;
 	justify-content: center;
-	gap: 5px;
+	text-align: center;
+	align-items: center;
+	box-sizing: border-box;
+	gap: 20px;
+	width: 30vw;
+}
+
+.calc {
+	border: none;
+	width: 70%;
+	background-color: var(--button-bg);
+	font-size: 30px;
+}
+
+.themes {
+	position: absolute;
+	border: none;
+	top: 10px;
+	right: 10px;
+}
+
+.light-theme {
+	background-color: #e5e5e5;
+
+	--button-bg: green;
+}
+
+.dark-theme {
+	background-color: #272727;
+
+	--button-bg: rgb(25, 23, 158);
 }
 
 .container-result {
-	display: flex;
-	justify-content: center;
-	margin: 10px 0px;
+	margin: 20px 0;
 	font-size: 32px;
 
 
 }
+
+
+
 
 .result {
 	padding: 5px 5px;
@@ -21,13 +65,18 @@ form {
 	color: rgb(99, 93, 93);
 }
 
+body.dark-theme .result {
+	color: #e5e5e5;
+	border: solid 2px #e5e5e5;
+}
+
 .container-chart {
 	padding: 0px 30px;
 	box-sizing: border-box;
 	display: flex;
-	gap: 2px;
+	gap: 3px;
 	align-items: flex-end;
-	height: calc(100vh - 100px);
+	height: calc(100vh - 20px);
 	width: 100vw;
 }
 
