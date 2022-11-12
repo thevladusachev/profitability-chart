@@ -1,6 +1,7 @@
 const contArr = document.querySelector('.container-chart');
 const contDiv = document.querySelector('.container-result');
 const form = document.querySelector('#form');
+const outerChart = document.querySelector('.chart__outer');
 
 /**
  * Создание div с результатом 
@@ -19,10 +20,19 @@ const renderResult = (result) => {
  */
 const renderChart = (arrRes) => {
 	const createDiv = (value, index, arr) => {
-		let chartItem = document.createElement('div');
-		chartItem.style.height = value / arr[arr.length - 1] * 100 + '%';
-		chartItem.classList.add('chart__element');
-		contArr.appendChild(chartItem);
+		let outerChartItem = document.createElement('div');
+		outerChartItem.classList.add('chart__outer');
+
+		outerChartItem.innerHTML = `
+			
+				<div style="height: ${value / arr[arr.length - 1] * 100 + '%'}" class="chart__element">
+				
+				</div>
+				<div>${value.toFixed(0)}</div>
+		`
+
+
+		contArr.appendChild(outerChartItem);
 	};
 
 	arrRes.forEach(createDiv);
