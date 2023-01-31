@@ -1,0 +1,11 @@
+.App {
+	background-color: #373F51;
+	text-align: center;
+}
+
+
+.AppWrapper {
+	margin: 0 auto;
+	width: 1266px;
+	min-height: 100vh;
+}

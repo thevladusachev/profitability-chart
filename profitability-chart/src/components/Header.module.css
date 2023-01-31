@@ -1,0 +1,18 @@
+.header {
+	min-height: 102px;
+	color: aliceblue;
+}
+
+.headerContainer {
+	display: grid;
+	grid-template-columns: 50% 50%;
+	padding-top: 36px;
+}
+
+.headerContainerMenu {
+	place-self: start;
+}
+
+.headerContainerSearch {
+	place-self: end;
+}

@@ -1,0 +1,9 @@
+.formOfCalculationWrapper {
+	margin-top: 65px;
+	height: 877px;
+	box-sizing: border-box;
+	background: radial-gradient(113.99% 139.66% at -6.09% 0%, rgba(218, 164, 154, 0.18) 0%, rgba(218, 164, 154, 0) 100%);
+	background-blend-mode: overlay, normal;
+	backdrop-filter: blur(20px);
+	border-radius: 79px;
+}
