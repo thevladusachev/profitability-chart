@@ -1,5 +1,4 @@
 import React from 'react';
-import { Routes, Route, BrowserRouter } from 'react-router-dom';
 import './App.css';
 import FormOfCalculation from './components/FormOfCalculation/FormOfCalculation';
 import Header from './components/Header';
